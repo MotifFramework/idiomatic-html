@@ -177,20 +177,24 @@ Tip: configure your editor to provide you with shortcuts to output agreed-upon c
 Example:
 
 ```html
-<!-- ========================================================================
-     Section comment block
-     ======================================================================== -->
-
-<!-- Sub section comment block
-     ======================================================================== -->
+<!--
+ - ==========================================================================
+ - Section comment block
+ - ==========================================================================
+ -->
 
 <!--
-     This is a description commment block. Lorem ipsum dolor sit amet, 
-     consectetur adipiscing elit. Nullam nec purus auctor purus vehicula 
-     lacinia. Duis elementum arcu at diam volutpat in volutpat dolor blandit.
+ - Subsection comment block
+ - ==========================================================================
+ -->
 
-     and that's it...
--->
+<!--
+ - This is a description comment block. Lorem ipsum dolor sit amet,
+ - consectetur adipiscing elit. Nullam nec purus auctor purus vehicula
+ - lacinia. Duis elementum arcu at diam volutpat in volutpat dolor blandit.
+ - 
+ - and that's it...
+ -->
 
 <!-- Single line code description -->
 ```
@@ -211,10 +215,11 @@ An example of various conventions.
     </head>
     <body>
 
-        <!-- ========================================================================
-             Main article section
-             ======================================================================== -->
-
+        <!--
+         - ==========================================================================
+         - Main article section
+         - ==========================================================================
+         -->
         <article class="post" id="1234">
             <time class="timestamp">March 15, 2012</time>
             <a data-id="1234"
@@ -232,10 +237,11 @@ An example of various conventions.
             </ul>
 
             <!--
-                 This is a description commment block. Lorem ipsum dolor sit amet, 
-                 consectetur adipiscing elit. Nullam nec purus auctor purus vehicula 
-                 lacinia. Duis elementum arcu at diam volutpat in volutpat dolor blandit.
-            -->
+             - This link is complex, and it requires a sub-element wrapped 
+             - around its target text.
+             -
+             - @todo Make use of pseudo content?
+             -->
             <a class="link-complex" href="[url]">
                 <span class="link-complex__target">[text]</span>
                 [text]
