@@ -210,6 +210,11 @@ An example of various conventions.
         <script src="main.js"></script>
     </head>
     <body>
+
+        <!-- ========================================================================
+             Main article section
+             ======================================================================== -->
+
         <article class="post" id="1234">
             <time class="timestamp">March 15, 2012</time>
             <a data-id="1234"
@@ -226,6 +231,11 @@ An example of various conventions.
                 </li>
             </ul>
 
+            <!--
+                 This is a description commment block. Lorem ipsum dolor sit amet, 
+                 consectetur adipiscing elit. Nullam nec purus auctor purus vehicula 
+                 lacinia. Duis elementum arcu at diam volutpat in volutpat dolor blandit.
+            -->
             <a class="link-complex" href="[url]">
                 <span class="link-complex__target">[text]</span>
                 [text]
