@@ -15,7 +15,8 @@ contribute.
 3. [Format](#format)
 4. [Attribute order](#attribute-order)
 5. [Naming](#naming)
-6. [Practical example](#example)
+6. [Comments](#comments)
+7. [Practical example](#example)
 
 [License](#license)
 
@@ -38,9 +39,9 @@ readability.
 
 * Never mix spaces and tabs for indentation.
 * Choose between soft indents (spaces) or real tabs. Stick to your choice
-  without fail. (Preference: spaces)
+  without fail. *(Preference: spaces)*
 * If using spaces, choose the number of characters used per indentation level.
-  (Preference: 4 spaces)
+  *(Preference: 4 spaces)*
 
 Tip: configure your editor to "show invisibles". This will allow you to
 eliminate end of line whitespace, eliminate unintended blank line whitespace,
@@ -122,6 +123,9 @@ scalable interface between your HTML and CSS/JS.
   should be informative both within HTML and CSS files.
 * Avoid _systematic_ use of abbreviated class names. Don't make things
   difficult to understand.
+* Follow the principles of the Block Element Modifier syntax, as suggested 
+  here: 
+  [http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 Example with bad names:
 
@@ -156,8 +160,43 @@ Example with better names:
 ```
 
 
+<a name="comments"></a>
+## 6. Comments
+
+Well commented code is extremely important. Take time to describe components and their relationships. Don't leave others in the team guessing as to the purpose of uncommon or non-obvious code.
+
+Comment style should be simple and consistent within a single code base.
+
+- Place comments on a new line above their subject.
+- Keep line-length to a sensible maximum, e.g., 80 columns.
+- Make liberal use of comments to break HTML code into discrete, scannable sections.
+- Use "sentence case" comments and consistent text indentation.
+
+Tip: configure your editor to provide you with shortcuts to output agreed-upon comment patterns.
+
+Example:
+
+```html
+<!-- ========================================================================
+     Section comment block
+     ======================================================================== -->
+
+<!-- Sub section comment block
+     ======================================================================== -->
+
+<!--
+     This is a description commment block. Lorem ipsum dolor sit amet, 
+     consectetur adipiscing elit. Nullam nec purus auctor purus vehicula 
+     lacinia. Duis elementum arcu at diam volutpat in volutpat dolor blandit.
+
+     and that's it...
+-->
+
+<!-- Single line code description -->
+```
+
 <a name="example"></a>
-## 6. Practical example
+## 7. Practical example
 
 An example of various conventions.
 
